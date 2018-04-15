@@ -19,11 +19,11 @@ if __name__ == u"__main__":
     if namespace.d is None:
         devices = _sys_disks.devices()
         for device in devices:
-            print(_sys_disks._device_to_str(device))
+            print(_sys_disks.device_to_str(device))
     else:
         partitions = _sys_disks.partitions(namespace.d)
         for partition in partitions:
-            print(_sys_disks._partition_to_str(partition))
+            print(_sys_disks.partition_to_str(partition))
 
     # Exit from program
     exit(0)
