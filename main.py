@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 from sys import platform, exit
 from service import configure_parser
 
@@ -7,7 +6,7 @@ from service import configure_parser
 if platform == "linux" or platform == "linux2":
     from linux import disk
 elif platform == "win32":
-    pass
+    from win import disk
 
 
 if __name__ == u"__main__":
