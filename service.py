@@ -4,6 +4,14 @@ import argparse
 
 
 def configure_parser(d_count):
+    '''
+
+    :param d_count:
+        Count of disks
+    :return: Parser object
+        parser
+
+    '''
     console_parser = argparse.ArgumentParser(
         prog=u'Disk info',
         description=u'Service for obtain information about disks'

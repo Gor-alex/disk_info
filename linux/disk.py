@@ -39,6 +39,14 @@ class Information(AbstractDisk):
 
     @staticmethod
     def name_or_path(partition):
+        '''
+
+        :param partition: object
+            Partition object by pyparted
+        :return: bool
+            which property is not empty
+
+        '''
         if partition.name is not None:
             if len(partition.name) == 0:
                 return False
